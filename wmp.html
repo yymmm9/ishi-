@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5">
+	<title>2020线上点单方案</title> <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128974444-6"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);wr
+		}
+		gtag('js', new Date());
+		gtag('config', 'UA-128974444-6');
+	</script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="counter">
+			<p id="c" class="counter--p">1 of 5</p>
+		</div><img id="1" class="page" src="https://ishifusion.it/image/10.jpg" alt=""><img id="2" class="page" src="https://ishifusion.it/image/11.jpg" alt=""><img id="3" class="page" src="https://ishifusion.it/image/12.jpg" alt=""><img id="4" class="page" src="https://ishifusion.it/image/13.jpg" alt=""><img id="5" class="page" src="https://ishifusion.it/image/20.jpg" alt="">
+	</div>
+	<style>
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+			background: #1B1B1D;
+		}
+
+		.wrapper {
+			padding: 72px 0;
+			max-width: 90vh;
+			margin: 0 auto;
+		}
+
+		.counter {
+			width: 75px;
+			height: 35px;
+			position: fixed;
+			top: 42px;
+			left: 20px;
+			background: rgba(255, 255, 255, 0.3);
+			backdrop-filter: blur(42px);
+			border-radius: 7px;
+			font-size: 16px;
+			text-align: center;
+		}
+
+		/* .counter{width: 75px;height: 35px;position: fixed;top: 72px;left: 20px;border-radius: 7px;font-size: 16px;text-align: center; background: hsla(0, 0%, 100%, .3);}.counter::before{content: ''; top: 0; right: 0; bottom: 0; left: 0; filter: blur(40px); z-index: -1;}*/
+		.counter--p {
+			margin: 0;
+			transform: translatey(7px);
+			color: #4f4f4f;
+			font-family: Arial, sans-serif;
+		}
+
+		img {
+			width: calc(100% - 14px);
+			margin: 7px;
+		}
+	</style>
+	<script>
+		const sections = [].slice.call(document.querySelectorAll(".page"));
+
+		function createObserver(el) {
+			let observer;
+			const options = {
+				root: null,
+				rootMargin: "0px",
+				threshold: 0.7
+			};
+			observer = new IntersectionObserver(handleIntersect, options);
+			observer.observe(el);
+		}
+
+		function handleIntersect(entries, observer) {
+			entries.forEach((entry) => {
+				let counter = document.getElementById('c');
+				let box = entry.target;
+				let bid = box.getAttribute('id');
+				let visible = entry.intersectionRatio;
+				if (visible > 0.7) {
+					counter.innerHTML = bid + " of 5";
+				} else {}
+			});
+		}
+		const setup = (sections) => {
+			for (let i in sections) {
+				const el = sections[i];
+				createObserver(el);
+			}
+		}
+		setup(sections);
+	</script>
+</body>

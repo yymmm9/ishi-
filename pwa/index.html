@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+
+	<title>𝒾𝓈𝒽𝒾 𝒻𝓊𝓈𝒾𝑜𝓃</title>
+	
+	<link rel="manifest" href="../manifest8.json" />
+
+	<link rel="icon" type="image/png" href="/icons/icon-72x72.png" sizes="72x72" />
+	<link rel="icon" type="image/png" href="/icons/icon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/png" href="/icons/icon-192x192.png" sizes="192x192" />
+	<link rel="apple-touch-icon" href="/icons/icon-192x192.png" sizes="192x192" />
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128974444-8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-128974444-8');
+    </script>
+    
+    
+
+	<script>
+		$(window).on("beforeunload", function() {
+			$(window).scrollTop(0);
+		});
+		
+		if('serviceWorker' in navigator) {
+  navigator.serviceWorker
+           .register('../pwa/sw.js')
+           .then(function() { console.log("Service Worker Registered"); });
+}
+	</script>
+	
+	<link rel="stylesheet" href="https://ishifusion.it/css/main.css">
+
+	<script>
+		$(window).on("beforeunload", function() {
+			$(window).scrollTop(0);
+		});
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker
+				.register('../pwa/sw.js')
+				.then(function() {
+					console.log("Service Worker Registered");
+				});
+		}
+	</script>
+</head>
+
+<body>
+
+	<div class="brrrand"><a href="./index.html"><svg width="66" height="29" viewBox="0 0 66 29" fill="none" xmlns="<http://www.w3.org/2000/svg">
+				<path d="M2 2V27" stroke="" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M39.0588 2V27" stroke="" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M64.353 2V27" stroke="" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M13.7646 9.94116C14.647 10.9216 17.4932 12.7527 20.5294 13.7647C24.0588 14.9412 26.1176 16.1176 26.9999 16.7059C29.3529 18.2745 30.647 23.647 24.0588 26.7059" stroke="" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M20.5295 27C18.9609 26.804 14.6471 25.8236 12.2942 22.8824" stroke="" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M43.4707 15.2353C47.6864 15.6274 55.2354 16.4118 55.2354 27" stroke="" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /></svg></a></div>
+	<div class="button_container" id="toggle">
+		<span class="top"></span>
+		<span class="middle"></span>
+		<span class="bottom"></span>
+	</div>
+	<div class="overlay" id="overlay">
+		<nav class="overlay-menu">
+			<ul>
+				<li><a href="./menu-asporto.html">Menù</a></li>
+				<li><a href="./pwa-t.0.1.html">Ordina online</a></li>
+				<li><a href="./gallery.html">Gallery</a></li>
+			</ul>
+		</nav>
+		<footer>
+			<div class="iframe_container"><iframe src="https://www.google.com/maps/d/u/0/embed?mid=11EVLFHxAn3lMBd7Q2YS7lhyvxJ8uCoAP"></iframe></div>
+			<p class=""><a href="tel:3665426215">Tel: +39 366 542 6215</a></p>
+		</footer>
+	</div>
+
+	<div class="announcement">
+		<h3>Siamo tornati !!</h3>
+		<p>Effettua il tuo ordina tramite il nostro sito <b><i>entro le 18:00</i></b> per <b><i>ricevere dopo le 19:00</i></b> dello stesso giorno, ordine minimo di 30 euro. <b><i>Consegnamo gratuitamente</i></b> per Milano! </p>
+		<span id="close-announcement" style="cursor: pointer; text-decoration: underline;">Chiudi</span>
+	</div>
+	<div class="intro">
+		<h1>Order</h1>
+		<h1>Online!</h1><a href="./pwa-t.0.1.html" class="b_order">
+			<p style="text-decoration: underline;">Takeaway</p>
+		</a>
+		<div class="welcome">
+			<div class="box one"></div>
+		</div>
+	</div>
+	<main class="main">
+
+		<article class="">
+			<h2 class="f_lum" style="display: table;transform: translate(-50%, 42px); position: relative; left: 50%;">Discover our</h2>
+			<h2 class="f_cld aln-rf mvi" style="transform: translate(50%, -30%); position: relative; right: 50%;">menu</h2>
+
+			<div class="v_img int1"></div>
+
+			<p>Ishi fusion si concentra nel mescolare ed innovare i sapori tradizionali orientali, cercando di proporre piatti ed eperienze uniche.<br></p>
+			<p>Ordina online sul nostro sito senza commissioni! Scopri il nostro menù e ordina da casa!</p>
+			
+			<a href="./menu-asporto.html" style="margin: 0 auto;">Visualizza il menù</a>
+		</article>
+		<article class="" style="padding: 0">
+			<h2 style="color: #DEA477; margin-left: 33px;"><i>Gallery</i></h2>
+			<div class="s_img">
+				<div id="xn" class="flexbox">
+					<img src="https://ishifusion.it/image/carpaccio.jpg" alt="Carpaccio">
+					<img src="https://ishifusion.it/image/sashimi.jpg" alt="Sashimi">
+					<img src="https://ishifusion.it/image/tartar.jpg" alt="Tartar">
+					<img src="https://ishifusion.it/image/dimsum.jpg" alt="Dim Sum">
+					<img src="https://ishifusion.it/image/g4.jpg" alt="Bao">
+					<img src="https://ishifusion.it/image/g6.jpg" alt="Sashimi">
+				</div>
+			</div>
+			<div class="s_img">
+				<div id="xp" class="flexbox" style="
+    position: relative;">
+					<img src="https://ishifusion.it/image/g1.jpg" alt="Antipasti misti">
+					<img src="https://ishifusion.it/image/g2.jpg" alt="Uramaki con astice">
+					<img src="https://ishifusion.it/image/g8.jpg" alt="Astice roll">
+					<img src="https://ishifusion.it/image/g5.jpg" alt="Anguilla">
+					<img src="https://ishifusion.it/image/g7.jpg" alt="Gambero rosso">
+					<img src="https://ishifusion.it/image/g6.jpg" alt="Sashimi">
+				</div>
+			</div>
+			<a href="./gallery.html" style="margin: 0 33px;
+    float: right;">Visualizza di più</a>
+		</article>
+
+	</main>
+
+	<footer>
+		<h2><i>Contatti</i></h2>
+		<h3><i>Ishi Fusion</i></h3>
+		<p>Corso di Porta Ticinese, 96<br />20123, Milano, MI Italia<br /><a href="tel:3665426215"><span class="phone"><b>+39 366 542 6215</b></span></a><br /><br /></p>
+
+		<h3><i>Ishi Ōji</i></h3>
+		<p>Viale Monza, 51<br />20127, Milano, MI Italia<br /><a href="tel:3314908988"><span class="phone"><b>+39 331 490 8988</b></span></a></p>
+
+		<div style="display: flex; flex-direction: column;">
+			<a href="https://www.instagram.com/ishifusion/"><span><b>Instagram</b></span></a>
+			<a href="mailto:info@ishifusion.it"><span><b>info@ishifusion.it</b></span></a>
+		</div>
+		<div class=" ">
+			<p>Copyright 2020 Ishi s.r.l.<br />All rights reserved, P.I./C.F. 09922870960</p>
+		</div>
+	</footer>
+
+	<script>
+	
+		$('#close-announcement').click(function() {
+			$(".announcement").css("opacity", "0");
+			$(".announcement").css("pointer-events", "none");
+		});
+	</script>
+
+	<script>
+		
+		$("#toggle").click(function() {
+			$(this).toggleClass("active");
+			$(".overlay").toggleClass("open");
+			$(".brrrand").toggleClass("opened");
+			$(".top,.middle,.bottom").toggleClass("bopened");
+		});
+	
+	
+		var $xp = $('#xp'),
+			$xn = $('#xn'),
+			$body = $('body'),
+			bodyHeight = $body.height();
+
+		function getScrollTop() {
+			if (typeof pageYOffset != 'undefined') {
+				//most browsers except IE before #9
+				return pageYOffset;
+			} else {
+				var B = document.body; //IE 'quirks'
+				var D = document.documentElement; //IE with doctype
+				D = (D.clientHeight) ? D : B;
+				return D.scrollTop;
+			}
+			return false;
+		}
+		$(window).scroll(function() {
+			var scroll = getScrollTop();
+			console.log()
+			var xnN = scroll / -7;
+			var xpN = scroll / 7;
+			var AnimXn = anime({
+				targets: '#xn',
+				translateX: xnN,
+				easing: 'easeOutQuart',
+				round: 1,
+				duration: 500
+			});
+			var AnimXp = anime({
+				targets: '#xp',
+				translateX: xpN,
+				easing: 'easeOutQuart',
+				round: 1,
+				duration: 500
+			});
+			AnimXn.completed = false;
+			AnimXp.completed = false;
+		});
+	</script>
+</body>
+
+</html>

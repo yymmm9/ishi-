@@ -1,0 +1,248 @@
+<html lang="zh">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5">
+
+	<title>𝒾𝓈𝒽𝒾 𝒻𝓊𝓈𝒾𝑜𝓃 | Menù d'Asporto</title>
+
+	<link rel="icon" href="/icons/icon-72x72.png" type="image/png" sizes="72x72">
+	<link rel="icon" href="/icons/icon-96x96.png" type="image/png" sizes="96x96">
+	<link rel="icon" href="/icons/icon-128x128.png" type="image/png" sizes="128x128">
+	<link rel="icon" href="/icons/icon-144x144.png" type="image/png" sizes="144x144">
+	<link rel="icon" href="/icons/icon-152x152.png" type="image/png" sizes="152x152">
+	<link rel="icon" href="/icons/icon-192x192.png" type="image/png" sizes="192x192">
+	<link rel="icon" href="/icons/icon-384x384.png" type="image/png" sizes="384x384">
+	<link rel="icon" href="/icons/icon-512x512.png" type="image/png" sizes="512x512">
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128974444-6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-128974444-6');
+    </script>
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="counter fr">
+			<p id="c" class="counter--p">1 of 16</p>
+		</div>
+
+		<img id="1" class="page" src="https://ishifusion.it/image/2020-05/a-01.jpg" alt="">
+		<img id="2" class="page" src="https://ishifusion.it/image/2020-05/a-02.jpg" alt="">
+		<img id="3" class="page" src="https://ishifusion.it/image/2020-05/a-03.jpg" alt="">
+		<img id="4" class="page" src="https://ishifusion.it/image/2020-05/a-04.jpg" alt="">
+		<img id="5" class="page" src="https://ishifusion.it/image/2020-05/a-05.jpg" alt="">
+		<img id="6" class="page" src="https://ishifusion.it/image/2020-05/a-06.jpg" alt="">
+		<img id="7" class="page" src="https://ishifusion.it/image/2020-05/a-07.jpg" alt="">
+		<img id="8" class="page" src="https://ishifusion.it/image/2020-05/a-08.jpg" alt="">
+		<img id="9" class="page" src="https://ishifusion.it/image/2020-05/a-09.jpg" alt="">
+		<img id="10" class="page" src="https://ishifusion.it/image/2020-05/a-10.jpg" alt="">
+		<img id="11" class="page" src="https://ishifusion.it/image/2020-05/a-11.jpg" alt="">
+		<img id="12" class="page" src="https://ishifusion.it/image/2020-05/a-12.jpg" alt="">
+		<img id="13" class="page" src="https://ishifusion.it/image/2020-05/a-13.jpg" alt="">
+		<img id="14" class="page" src="https://ishifusion.it/image/2020-05/a-14.jpg" alt="">
+		<img id="15" class="page" src="https://ishifusion.it/image/2020-05/a-15.jpg" alt="">
+		<img id="16" class="page" src="https://ishifusion.it/image/2020-05/a-16.jpg" alt="">
+
+		<a href="/index.html" class="fr btn--w">
+			<p style="">Home</p>
+		</a>
+
+		<a href="/pwa-t.0.1.html" class="fr btn--c">
+			<p>Ordina</p>
+		</a>
+
+	</div>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+			background: #1b1b1d;
+		}
+
+		.wrapper {
+			padding: 72px 0;
+			max-width: 90vh;
+			margin: 0 auto;
+		}
+
+		.fr {
+			background: rgba(210, 210, 210, 0.8);
+			backdrop-filter: blur(42px);
+			border-radius: 7px;
+			z-index: 50;
+		}
+
+		.counter--p {
+			color: #4f4f4f;
+			font-family: Arial, sans-serif;
+		}
+
+		img {
+			width: calc(100% - 14px);
+			margin: 7px;
+		}
+
+		@media only screen and (min-width: 996px) {
+			.link {
+				padding: 12px;
+				position: absolute;
+			}
+
+			.contact {
+				width: 250px;
+				height: 330px;
+			}
+
+			.contact h2 {
+				font-size: 48px;
+			}
+		}
+
+		h1,
+		h2,
+		p {
+			margin: 0;
+			font-family: Arial, sans-serif;
+		}
+
+		.contact h2 {
+			font-size: 4vw;
+		}
+
+		.contact {
+			position: fixed;
+			right: 20px;
+			bottom: 42px;
+			height: 40vw;
+			width: 30vw;
+			max-width: 350px;
+			max-height: 450px;
+			padding: 7px;
+		}
+
+		.fr {
+			display: flex;
+			width: 151px;
+			height: 44px;
+		}
+
+		.btn--w {
+			display: flex;
+			flex-direction: row;
+			position: fixed;
+			bottom: 10px;
+			right: 185px;
+		}
+
+		.btn--w svg {
+			margin: auto;
+		}
+
+		.btn--c {
+			position: fixed;
+			bottom: 10px;
+			right: 24px;
+		}
+
+		.counter {
+			width: 75px;
+			height: 35px;
+			position: fixed;
+			top: 10px;
+			left: 24px;
+		}
+
+		p,
+		a {
+			font-size: 15px;
+			margin: auto;
+			text-decoration: none;
+			color: #000;
+		}
+
+		.ads {
+			text-align: center;
+			background: #f5f5f5f5;
+			padding: 12px 24px;
+			border-radius: 7px;
+			margin-bottom: 54px;
+			opacity: 0.7;
+			transition: opacity 0.7s ease-out;
+		}
+
+		.ads:hover {
+			opacity: 1;
+		}
+
+		.ads h2 {
+			display: table;
+			margin: 12px auto;
+			font-size: 24px;
+		}
+
+		.ads p {
+			font-size: 18px;
+			margin-top: 12px;
+		}
+
+		.highlight {
+			font-style: normal;
+			text-shadow: 1px 1px 1px #fff;
+			background-image: linear-gradient(0deg, #d8c081 30%, rgba(0, 212, 255, 0) 30%);
+			background-position: 0 -5px;
+		}
+	</style>
+	<script>
+		const sections = [].slice.call(document.querySelectorAll(".page"));
+
+		function createObserver(el) {
+			let observer;
+			const options = {
+				root: null,
+				rootMargin: "0px",
+				threshold: 0.7
+			};
+			observer = new IntersectionObserver(handleIntersect, options);
+			observer.observe(el);
+		}
+
+		function handleIntersect(entries, observer) {
+			entries.forEach((entry) => {
+				let counter = document.getElementById('c');
+				let box = entry.target;
+				let bid = box.getAttribute('id');
+				let visible = entry.intersectionRatio;
+				if (visible > 0.7) {
+					counter.innerHTML = bid + " of 16";
+				} else {}
+			});
+		}
+		const setup = (sections) => {
+			for (let i in sections) {
+				const el = sections[i];
+				createObserver(el);
+			}
+		}
+		setup(sections);
+		setTimeout(function() {
+			document.getElementById('c').innerHTML = "1 of 16";;
+		}, 700);
+	</script>
+</body>
+
+</html>

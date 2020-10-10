@@ -1,0 +1,507 @@
+<html lang="it">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+
+	<title>𝒾𝓈𝒽𝒾 𝒻𝓊𝓈𝒾𝑜𝓃</title>
+
+	<link rel="icon" type="image/png" href="/icons/icon-72x72.png" sizes="72x72">
+	<link rel="icon" type="image/png" href="/icons/icon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/icons/icon-192x192.png" sizes="192x192">
+
+	<link rel="apple-touch-icon" href="/icons/icon-192x192.png" sizes="192x192">
+
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128974444-6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-128974444-6');
+    </script>
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+
+	<script>
+		$(window).on("beforeunload", function() {
+			$(window).scrollTop(0);
+		});
+	</script>
+
+</head>
+
+<body style="overflow: scroll;">
+	<div class="content">
+		<div class="brrrand pa">
+			<a href="/index.html">
+				<svg width="66" height="29" viewBox="0 0 66 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M2 2V27" stroke="" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+					<path d="M39.0588 2V27" stroke="" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+					<path d="M64.353 2V27" stroke="" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+					<path d="M13.7646 9.94116C14.647 10.9216 17.4932 12.7527 20.5294 13.7647C24.0588 14.9412 26.1176 16.1176 26.9999 16.7059C29.3529 18.2745 30.647 23.647 24.0588 26.7059" stroke="" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+					<path d="M20.5295 27C18.9609 26.804 14.6471 25.8236 12.2942 22.8824" stroke="" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+					<path d="M43.4707 15.2353C47.6864 15.6274 55.2354 16.4118 55.2354 27" stroke="" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+				</svg>
+
+			</a>
+		</div>
+
+		<div class="button_container pa" id="toggle">
+			<span class="top"></span>
+			<span class="middle"></span>
+			<span class="bottom"></span>
+		</div>
+
+		<div class="overlay pa" id="overlay">
+			<nav class="overlay-menu">
+				<ul>
+					<li><a href="/cs.html">About us</a></li>
+					<li><a href="/pwa-t.0.1.html">Takeaway</a></li>
+					<li><a href="/cs.html">Gallery</a></li>
+				</ul>
+			</nav>
+
+			<footer>
+
+				<div class="iframe_container">
+
+					<iframe src="https://www.google.com/maps/d/u/0/embed?mid=11EVLFHxAn3lMBd7Q2YS7lhyvxJ8uCoAP"></iframe>
+				</div>
+
+				<p class=""><a href="tel:3665426215">Tel: +39 366 542 6215</a></p>
+
+			</footer>
+		</div>
+
+		<main class="main">
+
+			<div class="co">
+				<div class="intro-cs">
+					<h1>Coming Soon</h1>
+				</div>
+				<div style="height: 5vh;"></div>
+			</div>
+		</main>
+	</div>
+
+	<style>
+		@font-face {
+			font-family: 'Roxborough CF';
+			src: url("https://ishifusion.it/css/RoxboroughCF-Light.woff2") format("woff2"), url("https://ishifusion.it/css/RoxboroughCF-Light.woff") format("woff");
+			font-weight: 300;
+			font-style: normal;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		* ::-webkit-scrollbar {
+			width: 0;
+			display: none;
+		}
+
+		html,
+		body {
+			height: 100%;
+			width: 100vw;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+
+		body {
+			background: #FAF4F0;
+		}
+		
+		.pa{
+		    pointer-events: all;
+		}
+
+		a {
+			color: #303030;
+			text-decoration: none;
+			text-decoration: underline;
+			cursor: pointer;
+		}
+
+		.content,
+		.main {
+			position: relative;
+			z-index: 10;
+			background: #FAF4F0;
+			overflow-x: hidden;
+		}
+
+		.content {
+			pointer-events: none;
+		}
+
+		.main {
+			padding-top: 0;
+			overflow-y: scroll;
+		}
+
+		.main * {
+			pointer-events: all;
+		}
+
+		h1,
+		h2,
+		h3,
+		p {
+			font-weight: 300;
+		}
+
+		h1,
+		h2 {
+			color: #44423B;
+			font-family: 'Roxborough CF';
+		}
+
+		h2 {
+			font-size: 32px;
+		}
+
+		p {
+			color: #77756D;
+			font-size: 12px;
+			margin: 21px 0;
+			line-height: 150%;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		span {
+			color: #9B7F79;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+
+		footer {
+			padding: 0 12px;
+		}
+
+		footer p {
+			font-size: 16px;
+		}
+		
+		.intro-cs{
+			height: 50vh;
+			width: 100%;
+			text-align: center;
+			padding: 23vh 0;
+		}
+		
+		.intro-cs h1{
+			font-size: 4vh;
+		}
+
+		.overlay footer {
+			position: absolute;
+			bottom: 8px;
+			height: 50%;
+			padding: 0;
+		}
+
+		.overlay footer iframe {
+			width: 100vw;
+			height: calc(100% + 48px);
+			transform: translateY(-48px);
+		}
+
+		.overlay footer h3 {
+			color: #FAF4F0;
+		}
+
+		.overlay footer p {
+			display: inline-block;
+			margin: 3px 0 0 21px;
+			font-size: 18px;
+		}
+
+		.brrrand {
+			position: fixed;
+			top: 10px;
+			left: 50%;
+			transform: translate(-50%, 7px);
+			height: 27px;
+			cursor: pointer;
+			z-index: 100;
+			stroke: #BA8334;
+		}
+
+		.brrrand svg {
+			stroke: #BA9855;
+		}
+
+		.overlay {
+			position: fixed;
+			background: #BA9855;
+			z-index: 90;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 1;
+			visibility: hidden;
+			transition: opacity 0.35s, visibility 0.35s, height 0.45s;
+			transition-timing-function: cubic-bezier(0.25, 0.74, 0.22, 0.99);
+			overflow: hidden;
+		}
+
+		.overlay ul {
+			list-style: none;
+			padding: 0;
+			margin: 0 auto;
+			display: inline-block;
+			position: relative;
+			visibility: visible;
+			height: 100%;
+		}
+
+		.overlay-menu ul li {
+			font-family: 'Roxborough CF';
+			font-weight: 300;
+			font-style: normal;
+		}
+
+		.pc-content {
+			display: none;
+			font-size: 18px;
+		}
+
+		@media (min-width: 960px) {
+			.overlay-menu ul {
+				float: right;
+			}
+
+			.overlay-menu ul li {
+				font-size: 24px;
+				float: right;
+				margin: 20px;
+				color: #303030;
+			}
+		}
+
+		@media (max-width: 960px) {
+			.overlay {
+				height: 0%;
+				opacity: 0;
+			}
+
+			.brrrand:hover {
+				opacity: 0.7;
+				transition: opacity 0.25s cubic-bezier(0.25, 0.74, 0.22, 0.99);
+			}
+
+			.button_container {
+				position: fixed;
+				top: 23px;
+				right: 21px;
+				height: 27px;
+				width: 32px;
+				cursor: pointer;
+				z-index: 100;
+				transition: opacity 0.25s cubic-bezier(0.25, 0.74, 0.22, 0.99);
+			}
+
+			.button_container:hover {
+				opacity: 0.7;
+			}
+
+			.button_container.active .top {
+				-webkit-transform: translateY(9px) translateX(0) rotate(45deg);
+				transform: translateY(9px) translateX(0) rotate(45deg);
+				background: #BA9855;
+			}
+
+			.button_container.active .middle {
+				opacity: 0;
+				background: #BA9855;
+			}
+
+			.button_container.active .bottom {
+				-webkit-transform: translateY(-9px) translateX(0) rotate(-45deg);
+				transform: translateY(-9px) translateX(0) rotate(-45deg);
+				background: #BA9855;
+			}
+
+			.button_container span {
+				background: #BA9855;
+				border: none;
+				height: 1.5px;
+				width: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				transition: all 0.7s ease;
+				cursor: pointer;
+			}
+
+			.button_container span:nth-of-type(2) {
+				top: 9px;
+			}
+
+			.button_container span:nth-of-type(3) {
+				top: 18px;
+			}
+
+			.overlay {
+				transition: all 0.5s;
+				height: 100%;
+				width: 100%;
+			}
+
+			.overlay li {
+				margin: 12px;
+			}
+
+			.overlay.open {
+				opacity: 1;
+				visibility: visible;
+				transition: all 0.5s;
+				transition-timing-function: ease;
+			}
+
+			.overlay.open ul {
+				visibility: visible;
+			}
+
+			.overlay li {
+				transition: all 0.75s ease 0.3s;
+			}
+
+			.overlay li:nth-of-type(2) {
+				transition: all 0.75s ease 0.35s;
+			}
+
+			.overlay li:nth-of-type(3) {
+				transition: all 0.75s ease 0.4s;
+			}
+
+			.overlay li:nth-of-type(4) {
+				transition: all 0.75s ease 0.45s;
+			}
+
+			.overlay.open li {
+				opacity: 1;
+				transform: translatex(0%);
+				transition: all 0.75s ease 0.3s;
+			}
+
+			.overlay.open li:nth-of-type(2) {
+				opacity: 1;
+				transform: translatex(0%);
+				transition: all 0.75s ease 0.35s;
+			}
+
+			.overlay.open li:nth-of-type(3) {
+				opacity: 1;
+				transform: translatex(0%);
+				transition: all 0.75s ease 0.4s;
+			}
+
+			.overlay.open li:nth-of-type(4) {
+				opacity: 1;
+				transform: translatex(0%);
+				transition: all 0.75s ease 0.45s;
+			}
+
+			.overlay nav {
+				position: relative;
+				height: calc(50% - 66px);
+				transform: translateY(66px);
+				font-size: 28px;
+				font-family: 'Roxborough CF';
+				font-weight: 400;
+				text-align: center;
+			}
+
+			.overlay ul li {
+				height: 25%;
+				width: 100%;
+				margin: calc(100% / 4) 0;
+				min-height: 50px;
+				position: relative;
+				opacity: 0;
+				transform: translatex(20%);
+			}
+
+			.overlay ul li a,
+			p {
+				display: block;
+				position: relative;
+				text-decoration: none;
+				overflow: hidden;
+			}
+
+			.overlay a {
+				color: #FAF4F0;
+			}
+
+			.overlay ul li a:hover:after,
+			.overlay ul li a:focus:after,
+			.overlay ul li a:active:after {
+				width: 100%;
+			}
+
+			.overlay ul li a:after {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				width: 0%;
+				-webkit-transform: translateX(-50%);
+				transform: translateX(-50%);
+				height: 3px;
+				background: #fff;
+				transition: 0.35s;
+			}
+
+			.overlay ul li {
+				opacity: 0;
+			}
+
+			.overlay ul {
+				visibility: hidden;
+				position: absolute;
+				height: auto;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+
+			.opened, .opened svg {
+				stroke: #FAF4F0;
+			}
+
+			.bopened {
+				background: #FAF4F0 !important;
+			}
+		}
+
+		.iframe_container {
+			overflow: hidden;
+			padding: 0;
+			margin: 0;
+			height: calc(87%);
+		}
+	</style>
+	<script>
+		$("#toggle").click(function() {
+			$(this).toggleClass("active");
+			$(".overlay").toggleClass("open");
+			$(".brrrand").toggleClass("opened");
+			$(".top,.middle,.bottom").toggleClass("bopened");
+		});
+	</script>
+
+</body>
+
+</html>
